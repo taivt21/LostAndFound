@@ -1,0 +1,264 @@
+:root {
+  --primary-color: #fff;
+  --second-color: #f3f4f6;
+  --third-color: #0f172a;
+}
+
+/* html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.wrapper .header {
+  z-index: 1;
+  background: #22242A;
+  position: fixed;
+  width: calc(100% - 0%);
+  height: 70px;
+  display: flex;
+  top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.wrapper .header .header-menu {
+  width: calc(100% - 0%);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.wrapper .header .header-menu .title {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.wrapper .header .header-menu .title span {
+  color: #4CCEE8;
+}
+
+.wrapper .header .header-menu ul {
+  display: flex;
+  margin-bottom: 0px !important;
+}
+
+.icon {
+  color: white;
+  margin-top: 1rem;
+}
+
+.wrapper .header .header-menu ul li a:hover {
+  /* background: #4CCEE8;
+  color: #fff; */
+  opacity: 0.8;
+}
+
+.wrapper .sidebar {
+  z-index: 1;
+  background: #2F323A;
+  position: fixed;
+  top: 70px;
+  width: 250px;
+  height: 100%;
+  transition: 0.3s;
+  transition-property: width;
+  overflow-y: auto;
+}
+
+.wrapper .sidebar .sidebar-menu {
+  overflow: hidden;
+}
+
+
+.wrapper .sidebar .sidebar-menu .profile img {
+  margin: 20px 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.wrapper .sidebar .sidebar-menu .profile p {
+  color: #bbb;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.wrapper .sidebar .sidebar-menu .item {
+  width: 250px;
+  overflow: hidden;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn {
+  display: block;
+  color: #fff;
+  position: relative;
+  padding: 25px 20px;
+  transition: 0.3s;
+}
+
+.wrapper .sidebar .sidebar-menu .item :hover,
+.wrapper .sidebar .sidebar-menu .item .active {
+  background-color: #000;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn i {
+  margin-right: 20px;
+}
+
+
+.wrapper .main-container {
+  width: (100% - 300px);
+  margin-top: 70px;
+  margin-left: 300px;
+  margin-right: 50px;
+  padding: 15px;
+  background: #fff;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.wrapper .main-container .card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.box {
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+
+table {
+  width: 100% !important;
+}
+
+table th,
+table td {
+  padding: 15px 30px;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+table th {
+  color: #364d67;
+  font-weight: 600;
+  background-color: #f1f7fd;
+}
+
+table td {
+  background-color: white;
+}
+
+table tbody tr {
+  border-top: 1px solid #f0f4f8;
+}
+
+table tr:hover {
+  background-color: darkgrey;
+}
+
+table .user {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+table .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.sticky-table {
+  overflow: auto;
+  border: 1px solid #f0f4f8;
+}
+
+.sticky-table tbody td:first-child,
+.sticky-table thead th:first-child {
+  position: sticky;
+  left: 0;
+}
+
+.sticky-table tbody td:first-child span {
+  padding-right: 50px;
+}
+
+.pagination,
+.dataTables_length,
+.dataTables_filter {
+  padding: 10px;
+}
+
+.dataTables_info {
+  margin-left: 10px;
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  opacity: 0.3;
+}
+.card .card-body .card-text{
+  padding:0px !important;
+}
